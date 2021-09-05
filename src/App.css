@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.main {
+  background-color: #f1f1f1;
   min-height: 100vh;
+}
+
+.main .nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  list-style: none;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #04AA6D;
 }
 
-.App-link {
-  color: #61dafb;
+.main .nav .nav-item .nav-link {
+  color: #fff;
+  padding: 5px 15px;
+  margin: 10px;
+  display: block;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main .nav .nav-item .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.main .nav .nav-item .nav-link.selected {
+  color: #04AA6D;
+  background-color: #fff;
+}
+
+.main .product-list {
+  padding: 30px 0;
+}
+
+
+.main .product-list-table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+}
+
+.main .product-list-table td,
+.main .product-list-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.main .product-list-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.main .product-list-table tr:hover {
+  background-color: #ddd;
+}
+
+.main .product-list-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: #fff;
+}
+
+.main .product-list-table th button {
+  padding-top: 12px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  padding-bottom: 12px;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: capitalize;
+  text-align: left;
+  background-color: #04AA6D;
+  color: #fff;
 }
